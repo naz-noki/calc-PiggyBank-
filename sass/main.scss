@@ -1,0 +1,79 @@
+@import url(_reset.scss);
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(226, 226, 226);
+}
+
+.wrapper {
+    margin-left: 150px;
+    max-width: 1000px;
+    height: max-content;
+    margin-top: 100px;
+    .calc {
+        display: flex;
+        align-self: center;
+        margin-top: 50px;
+        .mini-itog{
+            padding-top: 20px;
+        }
+        .rashod, .mini-itog{
+            margin-left: 50px;
+            .mini-itog__title {
+                margin: 0;
+                padding-bottom: 5px;
+            }
+        }
+    }
+}    
+
+input {
+    outline: none;
+    border: none;
+}
+
+.mini-itog__inp {
+   max-width: max-content;
+   max-height: 30px;
+   font-size: 40px;
+   background-color: transparent;
+   margin-top: 5px;
+   margin-bottom: 55px;
+   caret-color: transparent;
+} 
+
+.input {
+    height: 50px;
+    width: 220px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(124, 124, 124, 0.308);
+}
+
+.range__span {
+    display: flex;
+    .proc-range{margin: 0;}
+}
+
+.kopim-inp, .tratim-inp {
+    outline: none;
+    border: none;
+    max-width: max-content;
+    max-height: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    caret-color: transparent;
+    padding-top: 5px;
+}
+
+.kopim, .tratim {
+    display: flex;
+    align-items: center;
+}
+
+.range-itog {
+    display: flex;
+    padding-top: 30px;
+}

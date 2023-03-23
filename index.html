@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <title>Калькулятор Доходов</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="title"><h1 class="page-title">Калькулятор Доходов</h1></div>
+
+    <div class="calc">
+        <div class="dohod">
+            <div class="title"><h2 class="dohod__title">Доход в месяц</h2></div>
+            <div class="inp"><input type="text" class="input input-plus1" placeholder="Зарплата"></div>
+            <div class="inp"><input type="text" class="input input-plus2" placeholder="Фриланс"></div>
+            <div class="inp"><input type="text" class="input input-plus3" placeholder="Доп. Доход"></div>
+            <div class="inp"><input type="text" class="input input-plus4" placeholder="Доп. Доход"></div>
+        </div>
+
+        <div class="rashod">
+            <div class="title"><h2 class="dohod__title">Расходы в месяц</h2></div>
+            <div class="inp"><input type="text" class="input input-minus1" placeholder="Аренда Жилья"></div>
+            <div class="inp"><input type="text" class="input input-minus2" placeholder="ЖКХ"></div>
+            <div class="inp"><input type="text" class="input input-minus3" placeholder="Транспорт"></div>
+            <div class="inp"><input type="text" class="input input-minus4" placeholder="Кредиты"></div>
+        </div>
+
+        <div class="mini-itog">
+            <div class="dost-v-mes">
+                <div class="title"><h2 class="mini-itog__title">Доступно в месяц (без копилки)</h2></div>
+                <input type="text" class="inp__dost-v-mes mini-itog__inp" type="number" min="0" value="0">
+            </div>
+            <div class="dost-v-den">
+                <div class="title"><h2 class="mini-itog__title">Доступно в день</h2></div>
+                <input type="text" class="inp__dost-v-den mini-itog__inp" type="number" min="0" value="0">
+            </div>
+            <div class="za-god">
+                <div class="title"><h2 class="mini-itog__title">Накопим за год</h2></div>
+                <input type="text" class="inp__za-god mini-itog__inp" type="number" min="0" value="0">
+            </div>
+        </div>
+
+    </div>
+    <div class="procenet">
+        <div class="procent-range">
+            <h2 class="range__title">Сколько откладываем?</h2>
+            <input type="range" class="range" min="0" max="100" value="0">
+            <div class="range__span"><p class="proc-range">0</p>%</div>
+            <div class="range-itog">
+                <div class="kopim"><h2>Копим в месяц: </h2><input class="kopim-inp" min="0" value="0"></div>
+                <div class="tratim"><h2>Тратим в месяц: </h2><input class="tratim-inp" min="0" value="0"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+<script src="./script/script.js"></script>
+</body>
+</html>
